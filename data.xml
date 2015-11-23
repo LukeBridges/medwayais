@@ -1,0 +1,6 @@
+<markers>
+<marker lat='51.5022' lon='0.5795' name='UNDINE' dx='0.0259' dy='-0.0014' type='70' ais='253031000!9006112!LXUN!!!16.8!93!0!147!22!4.9!2015-11-23 12:00:27UTC!fl!A'/>
+<marker lat='51.4902' lon='0.7514' name='NORSKY' dx='0.0323' dy='-0.0063' type='79' ais='230652000!9186182!OJRB!ZEE-TILBURY-ZEE!Nov23 17:50!21.3!101!0!180!24!5.8!2015-11-23 11:53:00UTC!fl!A'/>
+<marker lat='51.4414' lon='0.7420' name='NORSTREAM' dx='0' dy='0' type='79' ais='230653000!9186194!OJRC!SHEERNESS!Nov23 06:00!0!206!5!180!25!5.7!2015-11-23 11:51:18UTC!fl!A'/>
+<marker lat='51.4387' lon='0.7399' name='PAGLIA' dx='0' dy='0' type='70' ais='236111881!9427940!ZDNC2!NEWCASTLE!Nov24 12:00!0.1!206!5!183!32!8.2!2015-11-23 12:00:18UTC!fl!A'/>
+</markers>
