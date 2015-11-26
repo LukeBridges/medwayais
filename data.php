@@ -1,7 +1,7 @@
 <?php
 require('settings.php');
 	
-$con = mysqli_connect($sqlserver, $username, $password, $dbname);
+$con = new mysqli($sqlserver, $username, $password, $dbname);
 	
 $myfile = fopen('data.xml', 'r') or die('Unable to open file!');
 $data = fread($myfile, filesize('data.xml'));
@@ -16,14 +16,14 @@ if($con)
 		
 		$aisinfo = explode('!', $markerprops['ais']);
 		
-		$name = mysqli_real_escape_string($con, $markerprops['name']);
-		$mmsi = mysqli_real_escape_string($con, $aisinfo[0]);
-		$imo = mysqli_real_escape_string($con, $aisinfo[1]);
-		$callsign = mysqli_real_escape_string($con, $aisinfo[2]);
-		$destination = mysqli_real_escape_string($con, $aisinfo[3]);
-		$date = mysqli_real_escape_string($con, $aisinfo[4]);
+		$name = $con->escape_string($markerprops['name']);
+		$mmsi = $con->escape_string($aisinfo[0]);
+		$imo = $con->escape_string($aisinfo[1]);
+		$callsign = $con->escape_string($aisinfo[2]);
+		$destination = $con->escape_string($aisinfo[3]);
+		$date = $con->escape_string($aisinfo[4]);
 		
-		$shipfromsql = mysqli_fetch_array(mysqli_query($con, 'SELECT * FROM ships WHERE MMSI=' . $mmsi . ';'));
+		$shipfromsql = $con->query($con, 'SELECT * FROM ships WHERE MMSI=' . $mmsi . ';');
 		
 		$sql = 'INSERT INTO ships (MMSI, Name, IMO, Callsign) VALUES (' 
 				. $mmsi . ', "' 
@@ -57,15 +57,28 @@ if($con)
 		
 		$sql = $sql . ';';
 		
-		if(!mysqli_query($con, $sql))
+		if(!$con->query($sql))
 		{
 			header('Content-type: text/html');
 
-			die('Error: ' . mysqli_error($con) . '<br /><pre>' . $sql . '</pre>');
+			die('Error: ' . $con->error . '<br /><pre>' . $sql . '</pre>');
+		}
+		
+		$sql = 'INSERT IGNORE INTO positions (lat, lon, type) VALUES ("' 
+				. $con->escape_string($markerprops['lat']) . '", "' 
+				. $con->escape_string($markerprops['lon']) . '", "' 
+				. $con->escape_string($markerprops['type']) . '") ON DUPLICATE KEY UPDATE type="'
+				. $con->escape_string($markerprops['type']) . '";';
+		
+		if(!$con->query($sql))
+		{	
+			header('Content-type: text/html');
+
+			die('Error: ' . $con->error . '<br /><pre>' . $sql . '</pre>');
 		}
 	}
 
-	mysqli_close($con);
+	$con->close();
 }
 
 header('Content-type: text/xml');

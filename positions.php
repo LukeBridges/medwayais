@@ -6,9 +6,7 @@ include('header.php');
 ?>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd_Tpb8Ocs8aRo6FMUfqAA3DaAaWfMb3k&amp"></script>
 <script type="text/javascript" src="http://static.lukebridges.co.uk/lbjs/ext/lbjs.ais.js"></script>
-<script type="text/javascript" src="http://static.lukebridges.co.uk/lbjs/ext/lbjs.ajax.js"></script>
-<script type="text/javascript" src="http://static.lukebridges.co.uk/libs/tooltip/tooltip.js"></script>
-<script type="text/javascript" src="http://medwayais.co.uk/mapv3.js"></script>
+<script type="text/javascript" src="http://medwayais.co.uk/positions.js"></script>
 <link rel="stylesheet" type="text/css" href="http://medwayais.co.uk/mapstyle.css">
 </head>
 <body>
@@ -16,8 +14,6 @@ include('header.php');
 <?php include('menu.php'); ?>
 <div id="map" style="width:100%;height:100%"></div>
 <div id="keyTable" class="mapPane">
-<div id="shiptime"></div>
-<div id="countDownTextWrapper">Next plot update in <span id="countDownText">0</span> seconds.</div>
 <table>
 <tr><td id="blueballoon">Pleasure/Passenger</td><td><img src="http://medwayais.co.uk/icons/mm_20_blue.png" height="20" width="12" alt="" /></td></tr>
 <tr><td id="hispdcrftballoon">Highspeed Craft</td><td><img src="http://medwayais.co.uk/icons/hispdcrft.png" height="20" width="12" alt="" /></td></tr>
@@ -32,12 +28,6 @@ include('header.php');
 <tr><td id="redmarker">NavAid/Special</td><td><img src="http://medwayais.co.uk/icons/mm_20_red.png" height="20" width="12" alt="" /></td></tr>
 <tr><td id="homemarker">Receiving Station</td><td><img src="http://medwayais.co.uk/icons/marker.png" height="34" width="20" alt="" style="height:34px;width:20px;" /></td></tr>
 </table>
-</div>
-<div id="shipStats" class="mapPane">
-<div id="shipmove"></div>
-<div id="shipdocked"></div>
-<h3><span>Farthest Ship:</span></h3>
-<div id="shipfar"></div>
 </div>
 <div style="margin: 8px;">
 <div style="text-align: left;">
@@ -54,5 +44,28 @@ No representation as to its accuracy is made or implied.<br />
 This information SHOULD NOT be used for navigational purposes.
 </div>
 </div>
+<div id="data" style="display: none">
+<?php 
+require('settings.php');
+	
+$con = new mysqli($sqlserver, $username, $password, $dbname);
+
+if($con)
+{
+	$posfromsql = $con->query('SELECT * FROM positions');
+
+	while($row = $posfromsql->fetch_assoc()) {
+		echo '<span class="marker" lat="' . $row["lat"] . '" lon="' . $row["lon"] . '" type="' . $row["type"] . '">Position</span>';
+    }
+
+	$con->close();
+}
+?>
+</div>
+<script type="text/javascript">
+lbjs(document).ready(function(){
+	doUpdate();
+});
+</script>
 </body>
 </html>

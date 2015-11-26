@@ -1,6 +1,10 @@
 <markers>
-<marker lat='51.5022' lon='0.5795' name='UNDINE' dx='0.0259' dy='-0.0014' type='70' ais='253031000!9006112!LXUN!!!16.8!93!0!147!22!4.9!2015-11-23 12:00:27UTC!fl!A'/>
-<marker lat='51.4902' lon='0.7514' name='NORSKY' dx='0.0323' dy='-0.0063' type='79' ais='230652000!9186182!OJRB!ZEE-TILBURY-ZEE!Nov23 17:50!21.3!101!0!180!24!5.8!2015-11-23 11:53:00UTC!fl!A'/>
-<marker lat='51.4414' lon='0.7420' name='NORSTREAM' dx='0' dy='0' type='79' ais='230653000!9186194!OJRC!SHEERNESS!Nov23 06:00!0!206!5!180!25!5.7!2015-11-23 11:51:18UTC!fl!A'/>
-<marker lat='51.4387' lon='0.7399' name='PAGLIA' dx='0' dy='0' type='70' ais='236111881!9427940!ZDNC2!NEWCASTLE!Nov24 12:00!0.1!206!5!183!32!8.2!2015-11-23 12:00:18UTC!fl!A'/>
+<marker lat='51.4417' lon='0.7422' name='BALTICBORG' dx='0' dy='0' type='79' ais='244590000!9267716!PBIP!TERNEUZEN!Nov26 02:00!0!205!5!154!22!6.8!2015-11-25 15:42:26UTC!fl!A'/>
+<marker lat='51.4843' lon='0.9411' name='VALENTINE' dx='-0.0205' dy='-0.0025' type='71' ais='205461000!9166625!ONDL!!!13.4!263!0!162!25!6.3!2015-11-25 16:05:26UTC!fl!A'/>
+<marker lat='51.4789' lon='0.9273' name='VANTAGE' dx='0.0226' dy='-0.002' type='70' ais='244985000!9375111!PBMC!TILBURY!Nov25 06:00!14.7!95!0!100!16!4.3!2015-11-25 16:01:21UTC!fl!A'/>
+<marker lat='51.4388' lon='0.7399' name='GLOVIS CONDUCTOR' dx='0' dy='0' type='70' ais='372097000!9293909!3EIC6!!!0.1!58.8!5!199!33!7.7!2015-11-25 15:59:27UTC!fl!A'/>
+<marker lat='51.3940' lon='0.5114' name='LADY MARY' dx='0' dy='0' type='70' ais='305229000!9375836!V2DI8!ROCHESTER!Nov24 18:00!0!340.9!5!90!13!5!2015-11-25 15:51:24UTC!fl!A'/>
+<marker lat='51.4999' lon='0.6921' name='NORSTREAM' dx='-0.0255' dy='0.0045' type='79' ais='230653000!9186194!OJRC!BEZEE  GBTIL!Nov25 18:00!16.8!280!0!180!25!6.2!2015-11-25 16:02:33UTC!fl!A'/>
+<marker lat='51.4377' lon='0.7388' name='235113125 UK' dx='0' dy='0' type='0' ais='235113125!0!unknown!unknown!unknown!0.1!29.6!0!0!0!0!2015-11-25 16:06:54UTC!fl!A'/>
+<marker lat='51.4951' lon='0.7159' name='233322000 UK' dx='0.0227' dy='-0.0051' type='0' ais='233322000!0!unknown!unknown!unknown!15.1!102.6!0!0!0!0!2015-11-25 16:07:25UTC!fl!A'/>
 </markers>

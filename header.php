@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="http://static.lukebridges.co.uk/medwayais/style1.css" />
-<link rel="stylesheet" type="text/css" href="http://static.lukebridges.co.uk/medwayais/menu_style.css">
+<link rel="stylesheet" type="text/css" href="http://medwayais.co.uk/style1.css" />
+<link rel="stylesheet" type="text/css" href="http://medwayais.co.uk/menu_style.css">
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="medway, ais, kent, river, radio, 161.975, 162.025, mhz, MHz, MEDWAY, KENT, england, ships, boats, docks, thames, shipplotter, google, maps, sp2gm" />
