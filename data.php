@@ -9,6 +9,8 @@ fclose($myfile);
 	
 if($con)
 {
+	$con->begin_transaction(MYSQLI_TRANS_START_READ_WRITE);
+	
 	$xml = simplexml_load_string($data);
 
 	foreach($xml->children() as $marker){
@@ -77,9 +79,10 @@ if($con)
 			die('Error: ' . $con->error . '<br /><pre>' . $sql . '</pre>');
 		}
 	}
-
-	$con->close();
+	
+	$con->commit();
 }
+$con->close();
 
 header('Content-type: text/xml');
 

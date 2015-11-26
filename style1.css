@@ -1,3 +1,4 @@
 html{background:url("//medwayais.co.uk/mudwaybgrnd.jpg") no-repeat center center fixed;background-size:cover}
 a,td{color:#FF0}
-#cookieBanner{z-index:100000000;text-align:center;width: 100%; background: #333 none repeat scroll 0% 0%; height: 35px;color: #CCC;font-weight: 400;font: 700 22px "Lucida Sans Unicode","Bitstream Vera Sans","Trebuchet Unicode MS","Lucida Grande",Verdana,Helvetica,sans-serif;}
+#cookieBanner{z-index:100000000;text-align:center;width: 100%; background: #333 none repeat scroll 0% 0%; height: 35px;color: #CCC;font-weight: 400;font: 700 22px "Segoe UI", "Lucida Sans Unicode","Bitstream Vera Sans","Trebuchet Unicode MS","Lucida Grande",Verdana,Helvetica,sans-serif;}
+h1{font-family: "Segoe UI", "Lucida Sans Unicode","Bitstream Vera Sans","Trebuchet Unicode MS","Lucida Grande",Verdana,Helvetica,sans-serif;}
