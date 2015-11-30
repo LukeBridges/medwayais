@@ -1,10 +1,9 @@
 <?php
 require('settings.php');
 
-$output = false;
-if(isset($_GET["debug"]))
-{
-	$output = true;
+$output = true;
+if(php_sapi_name() == "cli"){
+    $output = false;
 }
 	
 $con = new mysqli($sqlserver, $username, $password, $dbname);
@@ -13,8 +12,8 @@ if($con->connect_error){
     die('Error : ('. $con->connect_errno .') '. $con->connect_error);
 }
 	
-$IMOclean = $con->query('SELECT mmsi FROM ships WHERE IMO="0";');
-$CSNclean = $con->query('SELECT mmsi FROM ships WHERE Callsign="unknown";');
+$IMOclean = $con->query('SELECT mmsi FROM ships WHERE IMO="0" OR IMO="" OR IMO=" ";');
+$CSNclean = $con->query('SELECT mmsi FROM ships WHERE Callsign="unknown" OR Callsign="" OR Callsign=" ";');
 
 $toclean = [];
 $toclean['imo'] = [];
@@ -24,11 +23,13 @@ if($output){echo '<h1>IMO to clean</h1>';}
 while($ship = $IMOclean->fetch_array()){
 	$toclean['imo'][] = $ship['mmsi'];
 	if($output){echo $ship['mmsi'] . '<br />';}
+	flush();
 }
 if($output){echo '<h1>Callsign to clean</h1>';}
 while($ship = $CSNclean->fetch_array()){
 	$toclean['csn'][] = $ship['mmsi'];
 	if($output){echo $ship['mmsi'] . '<br />';}
+	flush();
 }
 
 $IMOclean->close();
@@ -41,6 +42,7 @@ foreach($toclean['imo'] as $mmsi){
 	{
 		if($output){echo 'Errormessage: ' . $con->error . '<br />';}
 	}
+	flush();
 }
 
 if($output){echo '<h1>Cleaning Callsign...</h1>';}
@@ -50,6 +52,7 @@ foreach($toclean['csn'] as $mmsi){
 	{
 		if($output){echo 'Errormessage: ' . $con->error . '<br />';}
 	}
+	flush();
 }
 
 $con->close();
