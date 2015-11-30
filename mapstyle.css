@@ -1,11 +1,12 @@
+*{font-family:"Segoe UI", "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;}
 html, body{background: #9de; margin: 0px;}
 h3{color:#000}
 .gpopup{width:200px}
-.gpopup table{border-collapse:collapse;border:0;font-family:Arial, Verdana, Helvetica, sans-serif, "MS sans serif";font-size:10px;text-align:left;color:#000;background:#FFF;padding:0}
+.gpopup table{border-collapse:collapse;border:0;font-size:10px;text-align:left;color:#000;background:#FFF;padding:0}
 .tooltip{border:1px solid #eee;background-color:#FFFBF0;padding:5px}
 #menuSpacer{height:35px;width:100%}
 .aisType{font-size:13px}
-#keyTable *{text-align:center}
+#keyTable *{text-align:center;}
 #keyTable td{padding:3px}
 h3 span{font-weight:bold}
 #copyright{text-align:right;font-weight:700;font-style:italic;font-size:12px}
