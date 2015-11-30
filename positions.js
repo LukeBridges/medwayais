@@ -34,8 +34,7 @@ mapicon = function(image, i)
 },
 createMarker = function(map, point, name, html, iconz)
 {
-	var marker = new google.maps.Marker({map: map, position: point, icon: iconz});
-	return marker;
+	return new google.maps.Marker({map: map, position: point, icon: iconz});
 },
 doUpdate = function()
 {
@@ -82,9 +81,6 @@ lbjs(document).ready(function(){
 		}
 	});
 	mapElem.height(parseInt(window.innerHeight - 35, 10));
-	
-	lbjs.ais.icons.home = mapicon("http://static.lukebridges.co.uk/medwayais/marker.png", 2);
-	createMarker(map, new google.maps.LatLng(my_lat, my_lon), 'Receiving Point', null, lbjs.ais.icons.home);
 
 	map.controls[google.maps.ControlPosition.LEFT_TOP].push(document.getElementById('keyTable'));
 

@@ -26,7 +26,6 @@ include('header.php');
 <tr><td id="grayballoon">Military/Police</td><td><img src="http://medwayais.co.uk/icons/mm_20_gray.png" height="20" width="12" alt="" /></td></tr>
 <tr><td id="lifebotmarker">Search &amp; Rescue</td><td><img src="http://medwayais.co.uk/icons/lifebot.png" height="31" width="50" alt="" style="height:31px;width:50px;" /></td></tr>
 <tr><td id="redmarker">NavAid/Special</td><td><img src="http://medwayais.co.uk/icons/mm_20_red.png" height="20" width="12" alt="" /></td></tr>
-<tr><td id="homemarker">Receiving Station</td><td><img src="http://medwayais.co.uk/icons/marker.png" height="34" width="20" alt="" style="height:34px;width:20px;" /></td></tr>
 </table>
 </div>
 <div style="margin: 8px;">
