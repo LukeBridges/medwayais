@@ -34,6 +34,7 @@ a, td{color: #000;}
 </head>
 <body>
 <?php include('menu.php'); ?>
+<?php flush(); ?>
 <center>
 <h1>Medway AIS Database</h1>
 <table bgcolor="#ccc" style="border: #ccc solid 0px">

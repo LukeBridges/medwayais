@@ -37,4 +37,5 @@ lbjs(document).ready(function(){
 </head>
 <body>
 <?php include('menu.php'); ?>
+<?php flush(); ?>
 <?php } ?>
