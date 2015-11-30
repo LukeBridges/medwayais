@@ -82,7 +82,7 @@ makeinfo = function(Lat, Lon, name, type, aisstr, i)
 		'<tr><td>Location:</td><td>' + latstr + '<sup>o</sup> / ' + lonstr + '<sup>o</sup></td></tr>\n' +
 		rangestr + classstr + '<tr><td colspan="2">&nbsp;</td></tr>\n' + recstr + '</table></div>\n';
 },
-mapicon = function(image, i)
+mapIcon = function(image, i)
 {
 	if(i === 1)
 	{
@@ -252,7 +252,7 @@ lbjs(document).ready(function(){
 	});
 	mapElem.height(parseInt(window.innerHeight - 35, 10));
 	
-	lbjs.ais.icons.home = mapicon("http://medwayais.co.uk/icons/marker.png", 2);
+	lbjs.ais.icons.home = mapIcon("http://medwayais.co.uk/icons/marker.png", 2);
 	createMarker(map, new google.maps.LatLng(my_lat, my_lon), 'Receiving Point', null, lbjs.ais.icons.home);
 
 	map.controls[google.maps.ControlPosition.LEFT_TOP].push(document.getElementById('keyTable'));
@@ -261,19 +261,19 @@ lbjs(document).ready(function(){
 	tooltip = document.createElement("div");
 	tooltip.style.visibility = "hidden";
 
-	lbjs.ais.icons.k = mapicon("http://medwayais.co.uk/icons/mm_20_gray.png", 0);
-	lbjs.ais.icons.b = mapicon("http://medwayais.co.uk/icons/mm_20_blue.png", 0);
-	lbjs.ais.icons.a = mapicon("http://medwayais.co.uk/icons/mm_20_red.png", 0);
-	lbjs.ais.icons.g = mapicon("http://medwayais.co.uk/icons/lifebot.png", 0);
-	lbjs.ais.icons.hs = mapicon("http://medwayais.co.uk/icons/hispdcrft.png", 0);
-	lbjs.ais.icons.dr = mapicon("http://medwayais.co.uk/icons/mm_20_green.png", 0);
-	lbjs.ais.icons.r = mapicon("http://medwayais.co.uk/icons/mm_20_yellow.png", 0);
-	lbjs.ais.icons.w = mapicon("http://medwayais.co.uk/icons/mm_20_white.png", 0);
-	lbjs.ais.icons.y = mapicon("http://medwayais.co.uk/icons/mm_20_brown.png", 0);
-	lbjs.ais.icons.m = mapicon("http://medwayais.co.uk/icons/mm_20_black.png", 0);
-	lbjs.ais.icons.o = mapicon("http://medwayais.co.uk/icons/mm_20_purple.png", 0);
-	lbjs.ais.icons.n = mapicon("http://medwayais.co.uk/icons/mm_20_brown.png", 0);
-	lbjs.ais.icons.track = mapicon("http://medwayais.co.uk/icons/shiptrkicon.gif", 1);
+	lbjs.ais.icons.k = mapIcon("http://medwayais.co.uk/icons/mm_20_gray.png", 0);
+	lbjs.ais.icons.b = mapIcon("http://medwayais.co.uk/icons/mm_20_blue.png", 0);
+	lbjs.ais.icons.a = mapIcon("http://medwayais.co.uk/icons/mm_20_red.png", 0);
+	lbjs.ais.icons.g = mapIcon("http://medwayais.co.uk/icons/lifebot.png", 0);
+	lbjs.ais.icons.hs = mapIcon("http://medwayais.co.uk/icons/hispdcrft.png", 0);
+	lbjs.ais.icons.dr = mapIcon("http://medwayais.co.uk/icons/mm_20_green.png", 0);
+	lbjs.ais.icons.r = mapIcon("http://medwayais.co.uk/icons/mm_20_yellow.png", 0);
+	lbjs.ais.icons.w = mapIcon("http://medwayais.co.uk/icons/mm_20_white.png", 0);
+	lbjs.ais.icons.y = mapIcon("http://medwayais.co.uk/icons/mm_20_brown.png", 0);
+	lbjs.ais.icons.m = mapIcon("http://medwayais.co.uk/icons/mm_20_black.png", 0);
+	lbjs.ais.icons.o = mapIcon("http://medwayais.co.uk/icons/mm_20_purple.png", 0);
+	lbjs.ais.icons.n = mapIcon("http://medwayais.co.uk/icons/mm_20_brown.png", 0);
+	lbjs.ais.icons.track = mapIcon("http://medwayais.co.uk/icons/shiptrkicon.gif", 1);
   
 	lbjs.ais.iconLookup = {30: lbjs.ais.icons.y, 31: lbjs.ais.icons.o, 32: lbjs.ais.icons.o, 33: lbjs.ais.icons.dr, 34: lbjs.ais.icons.y, 35: lbjs.ais.icons.k,
 	36: lbjs.ais.icons.b, 37: lbjs.ais.icons.b, 38: lbjs.ais.icons.w, 39: lbjs.ais.icons.w, 50: lbjs.ais.icons.g, 51: lbjs.ais.icons.g,
