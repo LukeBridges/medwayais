@@ -1,10 +1,8 @@
 <markers>
-<marker lat='51.4417' lon='0.7422' name='BALTICBORG' dx='0' dy='0' type='79' ais='244590000!9267716!PBIP!TERNEUZEN!Nov26 02:00!0!205!5!154!22!6.8!2015-11-25 15:42:26UTC!fl!A'/>
-<marker lat='51.4843' lon='0.9411' name='VALENTINE' dx='-0.0205' dy='-0.0025' type='71' ais='205461000!9166625!ONDL!!!13.4!263!0!162!25!6.3!2015-11-25 16:05:26UTC!fl!A'/>
-<marker lat='51.4789' lon='0.9273' name='VANTAGE' dx='0.0226' dy='-0.002' type='70' ais='244985000!9375111!PBMC!TILBURY!Nov25 06:00!14.7!95!0!100!16!4.3!2015-11-25 16:01:21UTC!fl!A'/>
-<marker lat='51.4388' lon='0.7399' name='GLOVIS CONDUCTOR' dx='0' dy='0' type='70' ais='372097000!9293909!3EIC6!!!0.1!58.8!5!199!33!7.7!2015-11-25 15:59:27UTC!fl!A'/>
-<marker lat='51.3940' lon='0.5114' name='LADY MARY' dx='0' dy='0' type='70' ais='305229000!9375836!V2DI8!ROCHESTER!Nov24 18:00!0!340.9!5!90!13!5!2015-11-25 15:51:24UTC!fl!A'/>
-<marker lat='51.4999' lon='0.6921' name='NORSTREAM' dx='-0.0255' dy='0.0045' type='79' ais='230653000!9186194!OJRC!BEZEE  GBTIL!Nov25 18:00!16.8!280!0!180!25!6.2!2015-11-25 16:02:33UTC!fl!A'/>
-<marker lat='51.4377' lon='0.7388' name='235113125 UK' dx='0' dy='0' type='0' ais='235113125!0!unknown!unknown!unknown!0.1!29.6!0!0!0!0!2015-11-25 16:06:54UTC!fl!A'/>
-<marker lat='51.4951' lon='0.7159' name='233322000 UK' dx='0.0227' dy='-0.0051' type='0' ais='233322000!0!unknown!unknown!unknown!15.1!102.6!0!0!0!0!2015-11-25 16:07:25UTC!fl!A'/>
+<marker lat='51.4890' lon='0.8089' name='SAMSKIP COURIER' dx='0.0255' dy='0.0008' type='71' ais='304923000!9322578!V2BT6!!!16.5!88.2!5!140!22!7!2015-11-30 10:34:14UTC!fl!A'/>
+<marker lat='51.4428' lon='0.7402' name='IVAN' dx='-0.0033' dy='0.0078' type='70' ais='255786000!9112040!CRXJ!ZEEBRUGGE!Dec01 19:00!5.5!337!0!100!18!5.4!2015-11-30 10:09:02UTC!fl!A'/>
+<marker lat='51.4316' lon='0.6834' name='ENFORCER' dx='-0.002' dy='-0.0047' type='70' ais='244597000!9255737!PBHI!THAMESPORT!Nov29 03:30!3.3!203.2!0!134!21!7.1!2015-11-30 10:15:04UTC!fl!A'/>
+<marker lat='51.4093' lon='0.5303' name='GPS BATTLER' dx='0' dy='0' type='52' ais='235073887!8738328!2CLU7!THAMES!Nov27 10:30!0!350.1!15!22!9!0!2015-11-30 10:35:18UTC!fl!A'/>
+<marker lat='51.4279' lon='0.7029' name='SVITZER KENT' dx='0.0153' dy='0.0005' type='52' ais='235113125!9695602!2IVK9!!!9.9!88.2!0!33!13!5.3!2015-11-30 10:23:23UTC!fl!A'/>
+<marker lat='51.4403' lon='0.7411' name='STAR FIRST' dx='0' dy='0' type='79' ais='636016511!9330056!D5GN9!SHEERNESS!Nov29 02:00!0!353!5!163!26!9.7!2015-11-30 10:33:44UTC!fl!A'/>
 </markers>
