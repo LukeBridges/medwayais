@@ -1,6 +1,6 @@
 <div class="menu" style="position:absolute;top:0px;left:0px;width:100%">
 <ul>
-<li><a href="https://github.com/LukeBridges/medwayais" style="line-height: 0px;"><img src="GitHub-Mark-Light-32px.png" /></a></li>
+<li><a href="https://github.com/LukeBridges/medwayais" style="line-height: 0px;"><img src="src/assets/icons/GitHub-Mark-Light-32px.png" /></a></li>
 <li><a href="index.php">HOME</a></li>
 <li><a href="map.php">LIVE MAP</a></li>
 <li><a href="db.php">DATABASE</a></li>
