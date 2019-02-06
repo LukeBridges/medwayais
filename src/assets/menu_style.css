@@ -1,0 +1,103 @@
+.menu {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    border: 0;
+    font: 67.5% "Segoe UI", "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0
+}
+
+.menu-github a {
+    line-height: 0 !important;
+}
+
+.menu ul {
+    background: #333;
+    height: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.menu li {
+    float: left;
+    padding: 0
+}
+
+.menu li a {
+    background: #333 bottom right no-repeat;
+    color: #ccc;
+    display: block;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0 25px
+}
+
+.menu li a:hover, .menu ul li:hover a {
+    background: #2580a2 bottom center no-repeat;
+    color: #FFF;
+    text-decoration: none
+}
+
+.menu li #back:hover, .menu ul #back:hover a {
+    background: #9AFE2E bottom center no-repeat;
+    color: #FFF;
+    text-decoration: none
+}
+
+.menu li ul {
+    background: #333;
+    display: none;
+    height: auto;
+    border: 0;
+    position: absolute;
+    width: 225px;
+    z-index: 200;
+    margin: 0;
+    padding: 0
+}
+
+.menu li:hover ul {
+    display: block
+}
+
+.menu li li {
+    background: bottom left no-repeat;
+    display: block;
+    float: none;
+    width: 225px;
+    margin: 0;
+    padding: 0
+}
+
+.menu li:hover li a {
+    background: none
+}
+
+.menu li ul a {
+    display: block;
+    height: 35px;
+    font-size: 12px;
+    font-style: normal;
+    text-align: left;
+    margin: 0;
+    padding: 0 10px 0 15px
+}
+
+.menu li ul a:hover, .menu li ul li:hover a {
+    background: #2580a2 center left no-repeat;
+    border: 0;
+    color: #fff;
+    text-decoration: none
+}
+
+.menu p {
+    clear: left
+}

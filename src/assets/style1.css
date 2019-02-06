@@ -1,0 +1,18 @@
+html {
+    background: url("../assets/mudwaybgrnd.jpg") no-repeat center center fixed;
+    background-size: cover
+}
+
+a, td {
+    color: #FF0
+}
+
+#cookieBanner {
+    z-index: 100000000;
+    text-align: center;
+    width: 100%;
+    background: #333 none repeat scroll 0% 0%;
+    height: 35px;
+    color: #CCC;
+    font: 700 22px;
+}
